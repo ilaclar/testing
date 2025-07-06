@@ -1,0 +1,260 @@
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>hkn</title>
+
+<link rel="icon" type="image/png" href="favicon_64px.png" sizes="64x64">
+<link rel="icon" type="image/png" href="favicon_32px.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon_16px.png" sizes="16x16">
+
+<style>
+@charset "UTF-8";
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: #c1b492;
+  letter-spacing: 8px;
+  image-rendering: pixelated;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  text-align: center;
+}
+
+img {
+  opacity: 0;
+  animation: opacity 0.2s ease-in forwards;
+  animation-delay: 0.6s;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#intro {
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 14px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.jp {
+  font-size: 14px;
+  margin-bottom: 100px;
+  letter-spacing: 0px;
+  font-smooth: auto;
+  -webkit-font-smoothing: auto;
+}
+
+.descp {
+  font-size: 10px;
+  width: 320px;
+  margin: 10px auto 0 auto;
+  text-align: left;
+  letter-spacing: 4px;
+  line-height: 1.6;
+}
+
+.descp b {
+  color: #d2738a;
+  letter-spacing: 8px;
+}
+
+a {
+  margin-bottom: 140px;
+  font-size: 10px;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+  display: inline-block;
+  color: #d2738a;
+}
+
+a:hover {
+  color: #c1b492;
+}
+
+hr {
+  border-color: #c1b492;
+  display: inline-block;
+  width: 170px;
+  border-style: solid;
+  border-bottom: 0px;
+}
+
+.text {
+  background-color: #dfd5bc;
+  height: 18px;
+  text-align: center;
+  margin-bottom: 12px;
+  transition: background-color 0.5s ease-out;
+  width: 170px;
+  border: none;
+}
+
+.text:hover,
+.text:focus {
+  background-color: white;
+}
+
+.button {
+  color: #dfd5bc;
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100px;
+  cursor: pointer;
+  padding: 2px 12px;
+  letter-spacing: 8px;
+  transition: color 0.5s ease-out, border-color 0.5s ease-out;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #dfd5bc;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  color: #d2738a;
+  border-color: #d2738a;
+}
+
+.darker {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/bg_darker.gif);
+  animation: darkestDown 80s linear infinite;
+}
+
+.dark {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/bg_dark_anim_0_08.gif);
+  animation: darkest 60s linear infinite;
+}
+
+.wiredGang {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/wiredGang_04.gif);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  animation: wiredGangAn 20s linear infinite;
+}
+
+.opacity {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  animation: opacityBg 0.3s linear forwards;
+  animation-delay: 0.6s;
+}
+
+.opacityContent {
+  opacity: 0;
+  animation: opacity 1s ease-in forwards;
+  animation-delay: 3s;
+}
+
+.opacityContent2 {
+  opacity: 0;
+  animation: opacity 1s ease-in forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes darkest {
+  from {
+    background-position-y: 1024px;
+  }
+  to {
+    background-position-x: -1024px;
+  }
+}
+
+@keyframes darkestDown {
+  from {
+    background-position-y: -1024px;
+  }
+  to {
+    background-position-x: 1024px;
+  }
+}
+
+@keyframes wiredGangAn {
+  from {
+    background-position-x: 341px;
+  }
+  to {
+    background-position-x: -341px;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityBg {
+  from {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wiredGang">
+  <div class="darker">
+    <div class="dark">
+      <div class="opacity">
+        <img src="images/wiredLogInNew_512px_06.gif" alt="wired">
+        <div class="opacityContent">
+          <h1 id="intro">hokain</h1>
+          <hr>
+          <h2 class="jp">いとをひく</h2>
+        </div>
+
+        <div class="opacityContent2">
+          <p>Username:</p>
+          <input class="text" type="text" name="User" placeholder="***********">
+          <br>
+          <p>Password:</p>
+          <input class="text" type="password" name="userID" placeholder="••••••••••••">
+          <br>
+          <button class="button" type="button" onclick="checkLogin()">Login</button>
+
+          <p class="descp"><b>NOT:</b> giris yapmak icin mevcut bi kullanicidan davetiye almis olmaniz gerekmektedir. davetiye istemenin bi faydasi yok yeni üyelerimizi özenle seciyoruz.</p>
+
+          <br><br>
+          <a href="http://eren.dog/">Help & Guidelines</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(_0x1d1424,_0x43bf03){const _0x361d21=_0x1e49,_0x13c89d=_0x1d1424();while(!![]){try{const _0x59ca8a=-parseInt(_0x361d21(0x161))/0x1+parseInt(_0x361d21(0x159))/0x2*(parseInt(_0x361d21(0x16a))/0x3)+-parseInt(_0x361d21(0x16f))/0x4*(parseInt(_0x361d21(0x158))/0x5)+-parseInt(_0x361d21(0x164))/0x6+parseInt(_0x361d21(0x171))/0x7+-parseInt(_0x361d21(0x160))/0x8+parseInt(_0x361d21(0x165))/0x9*(parseInt(_0x361d21(0x166))/0xa);if(_0x59ca8a===_0x43bf03)break;else _0x13c89d['push'](_0x13c89d['shift']());}catch(_0x33656f){_0x13c89d['push'](_0x13c89d['shift']());}}}(_0x2c96,0xa225f),function(_0x3a0d82,_0x3a7ee9){const _0x265904=_0x1e49,_0xf0142b=_0x219b,_0x289a12=_0x3a0d82();while(!![]){try{const _0x59c72f=parseInt(_0xf0142b(0x1a4))/0x1*(-parseInt(_0xf0142b(0x1a3))/0x2)+parseInt(_0xf0142b(0x1a1))/0x3+-parseInt(_0xf0142b(0x1a0))/0x4*(parseInt(_0xf0142b(0x1a9))/0x5)+-parseInt(_0xf0142b(0x19d))/0x6+-parseInt(_0xf0142b(0x1a2))/0x7*(parseInt(_0xf0142b(0x19b))/0x8)+-parseInt(_0xf0142b(0x19e))/0x9+parseInt(_0xf0142b(0x1ab))/0xa;if(_0x59c72f===_0x3a7ee9)break;else _0x289a12[_0x265904(0x173)](_0x289a12['shift']());}catch(_0x1d96bb){_0x289a12[_0x265904(0x173)](_0x289a12[_0x265904(0x163)]());}}}(_0x3c65,0x76349));function _0x219b(_0x569f61,_0x4238ed){const _0x28c2b1=_0x3c65();return _0x219b=function(_0x1c2a61,_0x3d12f3){_0x1c2a61=_0x1c2a61-0x19b;let _0x13b3c6=_0x28c2b1[_0x1c2a61];return _0x13b3c6;},_0x219b(_0x569f61,_0x4238ed);}function _0x1e49(_0x241573,_0x22a8b4){const _0x2c9616=_0x2c96();return _0x1e49=function(_0x1e49ef,_0x80ca8b){_0x1e49ef=_0x1e49ef-0x158;let _0x5b8481=_0x2c9616[_0x1e49ef];return _0x5b8481;},_0x1e49(_0x241573,_0x22a8b4);}function checkLogin(){const _0x29b4e6=_0x1e49,_0x3192e7=_0x219b,_0x41d59b=document[_0x29b4e6(0x16c)](_0x3192e7(0x1aa))[_0x3192e7(0x1a7)][_0x29b4e6(0x16d)]()[_0x3192e7(0x1a5)](),_0x2f1ec8=document[_0x29b4e6(0x16c)](_0x3192e7(0x1ac))[_0x3192e7(0x1a7)];_0x41d59b===_0x3192e7(0x1a8)&&_0x2f1ec8==='hkn'?window[_0x3192e7(0x19f)][_0x29b4e6(0x170)]=_0x3192e7(0x1a6):alert(_0x3192e7(0x19c));}function _0x3c65(){const _0x167a7b=_0x1e49,_0x59e1f2=[_0x167a7b(0x167),_0x167a7b(0x15d),'input[name=\x22userID\x22]','14752UqdVJM',_0x167a7b(0x168),_0x167a7b(0x15f),'6796593CDxaah',_0x167a7b(0x16e),_0x167a7b(0x15c),'1283049XgdkVm',_0x167a7b(0x169),_0x167a7b(0x15b),_0x167a7b(0x15a),_0x167a7b(0x15e),_0x167a7b(0x162),_0x167a7b(0x16b),'hokain',_0x167a7b(0x172)];return _0x3c65=function(){return _0x59e1f2;},_0x3c65();}function _0x2c96(){const _0xe87881=['8162416bjgFVy','884551enMnkK','https://open.spotify.com/intl-tr/track/2cJDuuNIPxoC9u1G3zVaG3?si=33045224310c4470','shift','5141778ePNidA','2130615HBLsbf','90nwHHNC','input[name=\x22User\x22]','Incorrect\x20username\x20or\x20password.','70mLZlkU','450QmOElW','value','querySelector','trim','location','4nKVpNf','href','3455725tGRihM','5LbHOWS','push','640825pkkERT','12398vRaDlS','59jGsgbg','7734tTPjYz','3500160osvfPj','27235690VJDcjM','toLowerCase','4741638SpjKsw'];_0x2c96=function(){return _0xe87881;};return _0x2c96();}
+</script>
+
+
+</body></html>
